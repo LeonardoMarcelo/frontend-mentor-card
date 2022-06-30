@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* VARIAVEIS DO PROJETO */
+:root {
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    font-family: 'Red Hat Display', sans-serif;
+    align-items: center;
+    background-color: var(--Very-pale-blue) ;
+    /* background-image: linear-gradient(var(--Pale-blue),var(--Desaturated-blue)); */
+   
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 900;
+    line-height: 1.3;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+}
+
+/* CARD ESTILO */
+
+.box {
+    max-width: 350px;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+.box-data {
+    padding: 1.956rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.title-primary {
+    font-weight: 900;
+    margin-bottom: 1.125rem;
+}
+
+.box-text {
+    max-width: 288px;
+    margin: 0 auto 24px;
+    opacity: 0.6;
+}
+
+/* CARD MOBEY */
+.box-card-money {
+    background-color: rgb(248, 245, 245);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.938rem;
+    border-radius: 1.125rem;
+    margin-bottom: 1rem
+}
+
+.card-money-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.938rem;
+    opacity: 0.8;
+}
+
+/* CARD FOOTER  */
+
+.card-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.938rem;
+}
+
+.box-button {
+    padding: 12px 24px;
+    color: white;
+    background-color: var(--Bright-blue);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 0.75rem;
+    box-shadow: 0 20px 40px hsla(245, 75%, 52%, 0.3);
+    transition: 0.4s all ease-in;
+}
+
+.box-cancel {
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+}
+
+
+/* ANIMAÇÃO */
+.animar {
+    transform: scale(1);
+    opacity: 0.9;
+}
+.box-button:hover{
+  opacity: 0.9;
+}
